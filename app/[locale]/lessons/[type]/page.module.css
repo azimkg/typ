@@ -1,0 +1,11 @@
+.top {
+  background: var(--bg-level-3);
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.page {
+  min-height: 100vh;
+}

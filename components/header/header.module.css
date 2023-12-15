@@ -1,0 +1,37 @@
+.header {
+  padding: 16px 0;
+  height: 80px;
+}
+
+.links {
+  margin-left: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.links>a:not(:last-child) {
+  margin-right: 24px;
+}
+
+.link {
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+  border-bottom: 2px solid var(--col-m-primary);
+}
+
+.active {
+  border-bottom: 2px solid var(--col-m-primary);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav>div {
+  display: flex;
+  align-items: center;
+}

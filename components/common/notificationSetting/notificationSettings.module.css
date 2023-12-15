@@ -1,0 +1,8 @@
+.template {
+  display: none;
+}
+.template_show {
+  display: block;
+  min-height:40px;
+  background: red;
+}

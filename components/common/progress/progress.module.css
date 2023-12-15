@@ -1,0 +1,60 @@
+.progress {
+  position: relative;
+  width: 100%;
+  height: var(--progress-height);
+}
+.progress svg {
+  box-sizing: border-box;
+}
+.progress :global .rc-progress-line  {
+  height: var(--progress-height);
+  border-radius: var(--progress-radius);
+  width: 100%;
+}
+.progress:has(:global .rc-progress-circle )  {
+  height: var(--progress-height);
+  width: var(--progress-height);
+}
+.progress > svg {
+  position: absolute;
+}
+.progress :global .rc-progress-line-trail {
+  stroke: var(--fill-tertiary);
+}
+.progress :global .rc-progress-circle > .rc-progress-circle-trail {
+  stroke: var(--col-m-tertiary)!important;
+}
+.progress :global .rc-progress-line-path {
+  stroke: var(--col-m-primary);
+}
+.progress :global .rc-progress-circle-path {
+  stroke: var(--col-m-primary)!important;
+}
+
+.progress :global .rc-progress-circle {
+  height: var(--progress-height);
+  width: var(--progress-height);
+}
+.progress > span {
+  display: none;
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 0;
+  width: 100%;
+  white-space: normal;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.progress_circle > span {
+  font-size: 12px;
+  line-height: 16px;
+}
+.progress_circle {
+  width: var(--progress-height);
+}
+.with_text > span {
+  display: block;
+}
+.color_changed {
+  color: var(--text-white);
+}

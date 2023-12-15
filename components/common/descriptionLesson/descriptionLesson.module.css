@@ -1,0 +1,31 @@
+.content {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.btn_content {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.content_text div {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 40px;
+    font-size: 32px;
+    line-height: 40px;
+}

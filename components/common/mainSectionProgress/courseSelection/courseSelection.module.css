@@ -1,0 +1,22 @@
+.template {
+  border-radius: 8px;
+  border: 1.5px solid var(--fill-primary);
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  align-items: center;
+  grid-gap: 1px;
+  padding: 0 16px 0 24px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.template > svg {
+  transition: transform .3s ease-in-out;
+}
+.active > svg {
+  transform: rotate(180deg);
+}
+.dropdown > div:last-child {
+  border: 1px solid var(--fill-primary);
+}

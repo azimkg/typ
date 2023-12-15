@@ -1,0 +1,143 @@
+{
+  "Тестовый пример": "increase",
+  "header": {
+    "tests": "Tests",
+    "lessons": "Lessons",
+    "games": "Games",
+    "statistic": "Statistic",
+    "themes": "Themes",
+    "dropdown": {
+      "title": "Choice language",
+      "site-lan": "Website language",
+      "keyboard-lan": "Keyboard layout language"
+    }
+  },
+  "button": {
+    "cancel": "Отменить",
+    "apply": "Применить",
+    "sign-in": "Sign In",
+    "create": "Create account",
+    "forgot": "Forgot password?",
+    "send": "Send",
+    "forward": "Continue",
+    "save": "Save",
+    "change": "Change Password",
+    "get": "Get Premium",
+    "begin": "Начать",
+    "another-one": "Ещё раз",
+    "repeat": "Повтор",
+    "continue": "Продолжить",
+    "print": "Распечатать сертификат",
+    "start": "Start a task",
+    "remember": "Repeat",
+    "close":"Close"
+  },
+  "language": {
+    "ru": "Russian",
+    "en": "English"
+  },
+  "keyboard": {
+    "ru": "Russian",
+    "en": "English"
+  },
+  "themes-page": {
+    "theme": {
+      "default": "Стандартная",
+      "dark": "Темная",
+      "green": "Тема 1",
+      "blue": "Тема 2"
+    },
+    "title": "Theme preview"
+  },
+  "profile": {
+    "settings": "Profile Settings",
+    "password": "Password",
+    "profileTitle": "Profile",
+    "changePass": "Change Password",
+    "out": "Log out",
+    "certificate":"Сертификат",
+    "premium": {
+      "prem-text": "Current subscription",
+      "prem-title": "Trial - Premium",
+      "prem-day": "Valid until September 14, 2023 ({count} days)"
+    }
+  },
+  "authModal": {
+    "sign-title": "Sign In",
+    "sign-text1": "If you don't have an account, enter your email and we will create a new one for you",
+    "sign-text2": "By registering and logging in, you agree to the terms of use and data processing policy.",
+    "sign-text3": "This data will be displayed in the certificate",
+    "pass-recTitle": "Password Recovery",
+    "rec-mess": "We will send you a link to recover your password",
+    "auth-title": "Registering a new account",
+    "input": {
+      "error-signIn": "Enter the correct email address",
+      "required-field": "Fill in the required field"
+    },
+    "placeholder": {
+      "newPass": "Come up with a new password",
+      "confPass": "Confirm the new password",
+      "password": "Come up with a password",
+      "name": "Name",
+      "sureName": "Surname",
+      "mail": "Mail",
+      "oldPass": "Enter the old password",
+      "oldPassword": "Old password",
+      "newPassword": "Enter the new password",
+      "newPassword2": "New password",
+      "confirmPass": "Confirm the new password"
+    }
+  },
+  "time": "Время",
+  "word": "Слова",
+  "time-during": "на время",
+  "without-time-limits": "без ограничений по времени",
+  "lessons-page": {
+    "sidebar": {
+      "education": "Обучение",
+      "basic": "Начальный",
+      "medium": "Средний",
+      "advanced": "Продвинутый",
+      "practice": "Практика",
+      "problems-keyboard": "Проблемные клавиши",
+      "tests": "Тесты"
+    }
+  },
+  "lesson-card": {
+    "test": {
+      "speed": "Ср. скорость",
+      "accuracy": "Ср. точность",
+      "attempts": "Попыток",
+      "fastest": "Самый быстрый"
+    },
+    "default": {
+      "speed": "Скорость",
+      "accuracy": "Точность",
+      "spendTime": "Время"
+    }
+  },
+  "result":{
+    "bad-result-text": "The task is completed with an accuracy of 54%, a minimum of 60% is required to complete the task",
+    "bad-result-title": "That won't do!",
+    "one-coin": "Great, got one star!", 
+    "two-coin": "Excellent, two stars have been received!",
+    "three-coin": "Excellent, all the stars have been received!",
+    "task-result": "tasks completed",
+    "result-title":"Great job"
+  },
+  "tooltip":{
+    "one-coin":"Для получения этой звезды, пройди задание",
+    "two-coin":"Для получения этой звезды, пройди задание с точностью от 90%",
+    "three-coin":"Для получения этой звезды, пройди задание с точностью от 95%",
+    "enter":"Нажмите ENTER чтобы продолжить",
+    "esc": "Нажмите ESC чтобы продолжить",
+    "r": "Нажмите R чтобы продолжить"
+  },
+  "new-letter" : {
+    "start": {
+      "main": "Основные клавиши",
+      "press-keyboard": "Нажмите клавишу",
+      "a": "используя левый мизинец"
+    }
+  }
+}

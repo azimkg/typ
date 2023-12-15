@@ -1,0 +1,71 @@
+.keyboard_settings_modal_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 24px; */
+    gap: 24px;
+    /* background: var(--light-bg-level-3, #FFF); */
+}
+
+.keyboard_settings_modal_main > div {
+    width: 872px;
+}
+
+.ksm_line {
+    width: 100%;
+    /* border: .5px solid red; */
+    border: 1px solid var(--fill-primary);
+    /* stroke: var(--light-fill-primary, rgba(120, 120, 128, 0.20)); */
+}
+
+.ksm_h1 {
+    color: var(--light-text-primary, #000);
+    font-family: Geologica;
+    font-size: 24px;
+    font-weight: 500;
+    /* line-height: 32px; */
+}
+
+.ksm_2, 
+.ksm_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.ksm_2_1, 
+.ksm_2_2, 
+.ksm_3_1, 
+.ksm_3_2 {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.ksm_3_1 > div {
+    display: flex;
+}
+
+.ksm_3_1 > div > button:not(:last-child) {
+    margin-right: 12px;
+}
+
+.ksm_4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.ksm_2_btns:first-child {
+    margin-right: 12px;
+}
+
+.ksm_2_1_btns {
+    display: flex;
+}

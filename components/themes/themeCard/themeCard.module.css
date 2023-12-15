@@ -1,0 +1,70 @@
+.card {
+  padding: 14px 16px;
+  height: 60px;
+  min-width: 320px;
+  border: 1px solid var(--fill-secondary);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.card_white {
+  background: #FFF;
+}
+.card_dark {
+  background: #000;
+}
+.card_green {
+  background: #173F35;
+}
+.card_blue {
+  background: #003A52;
+}
+
+.card_white > p {
+  color: #000;
+}
+.card_dark > p {
+  color: #FFF;
+}
+.card_green > p {
+  color: #E9E0D2;
+}
+.card_blue > p {
+  color: #FDE2FF;
+}
+
+
+.lists {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+.circle_grey  {
+  background: #8A8A8E;
+}
+.circle_blue  {
+  background: #1A75FF;
+}
+.circle_aqua  {
+  background: #00E4FF;
+}
+.circle_pink  {
+  background: #D480FF;
+}
+.circle_green  {
+  background: #408E7B;
+}
+.circle_yellow {
+  background: #FFB200;
+}
+.circle:first-child {
+  margin-right: 8px;
+}
+

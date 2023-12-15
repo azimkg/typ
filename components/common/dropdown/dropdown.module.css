@@ -1,0 +1,23 @@
+.dropdown {
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown > div:last-child {
+  border-radius: 16px;
+  padding: 24px;
+  background: var(--bg-level-3);
+  position: absolute;
+  display: none;
+  opacity: 0;
+  height: 0;
+  width: fit-content;
+  transition: height .2s ease-in-out, opacity .2s ease-in-out;
+}
+.dropdown_show > div:last-child  {
+  display: block;
+  height: fit-content;
+  opacity: 1;
+  z-index: 999;
+  transform: translateY(4px);
+}

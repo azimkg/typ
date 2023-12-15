@@ -1,0 +1,31 @@
+.template>p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 12px;
+  color: var(--text-tertiary);
+}
+
+.template {
+  min-width: 250px;
+}
+
+.template>div {
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+}
+
+.template>div>a:not(:last-child) {
+  border-bottom: 1.5px solid var(--fill-primary);
+}
+
+.template>div:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.desc {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-secondary);
+}

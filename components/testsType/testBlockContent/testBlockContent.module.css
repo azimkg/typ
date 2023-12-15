@@ -1,0 +1,10 @@
+.template {
+    display: grid;
+    row-gap: 8px;
+}
+
+.template>h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}

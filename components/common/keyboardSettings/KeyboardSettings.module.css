@@ -1,0 +1,31 @@
+.keyboard_top_icons_group {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+
+.keyboard_top_icons_group {
+  display: flex;
+}
+
+.keyboard_top_icons_group>div {
+  width: 48px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.keyboard_vertical_line {
+  width: 1px !important;
+  height: 32px;
+  background-color: var(--fill-primary);
+  margin: 0px 8px 0px 8px;
+  /* opacity: 20%; */
+}
+
+.set_opasity {
+  opacity: 0.4;
+}

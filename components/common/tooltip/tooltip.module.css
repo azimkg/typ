@@ -1,0 +1,9 @@
+.tooltip {
+  background: var(--bg-modal) !important;
+  color: var(--text-white);
+  padding: 12px 24px !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  border-radius: 8px !important;
+  line-height: 20px !important;
+}

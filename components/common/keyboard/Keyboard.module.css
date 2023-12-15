@@ -1,0 +1,35 @@
+.keyboard_container {
+  width: 924px;
+  max-height: 418px;
+  border-radius: 8px;
+  border: 1px solid var(--fill-primary);
+  padding: 12px;
+  gap: 12px;
+  background: var(--bg-level-2);
+  position: relative;
+  overflow: hidden;
+}
+
+.keyboard_hidden {
+  display: none;
+}
+
+.keyboard_mini {
+  width: 924px;
+  height: 56px;
+}
+
+.keyboard_main {
+  margin-top: 12px;
+  border-top: 1px solid var(--fill-primary);
+}
+
+.keyboard_btns_group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.keyboard_dis {
+  opacity: 0.1;
+}

@@ -1,0 +1,8 @@
+.template {
+  display: flex;
+  align-items: center;
+}
+.template > span {
+  display: block;
+  margin-left: 16px;
+}

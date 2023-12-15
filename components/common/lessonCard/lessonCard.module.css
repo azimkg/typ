@@ -1,0 +1,91 @@
+.lesson {
+  width: 100%;
+  /* height: 100%; */
+  padding: 0px 16px;
+  border-radius: 16px;
+  background-color: var(--bg-level-4);
+}
+
+.lesson_green {
+  background-color: var(--col-s-primary);
+  color: var(--text-white);
+}
+
+.lesson h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.lesson_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.less_block_flex {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.block_rating {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+
+.info_block {
+  border-top: 1px solid var(--fill-primary);
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.info_block p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-secondary);
+}
+
+
+.info_block_white {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info_block_white>p {
+  color: var(--text-white);
+}
+
+.info_block_hidden {
+  display: none;
+}
+
+.progress_hidden {
+  display: none !important;
+}
+
+.progress_passed {
+  --col-m-primary: #FFF;
+  opacity: 0.3;
+}
+
+.progress_num {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress_num span {
+  position: absolute;
+  top: 10px;
+}
+
+.hidden {
+  display: none;
+}

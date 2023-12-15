@@ -1,0 +1,42 @@
+.pnf_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 85px);
+}
+
+.pnf_h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.pnf_keyboard {
+  width: 924px;
+  height: 372px;
+  border-radius: 8px;
+  background-color: var(--bg-level-2);
+  border: 1px solid var(--fill-primary);
+  padding: 0 12px;
+}
+
+.keyboard_btns_group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.pnf_keyboard button {
+  color: var(--text-secondary)
+}
+
+.red {
+  background-color: #f23d44 !important;
+  color: var(--global-white) !important;
+}
+.route {
+  display: block;
+  margin: 40px auto 0;
+  width: fit-content;
+}

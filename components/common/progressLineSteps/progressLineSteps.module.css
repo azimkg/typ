@@ -1,0 +1,5 @@
+.progress_list {
+  display: flex;
+  column-gap: 4px;
+  margin-bottom: 16px;
+}

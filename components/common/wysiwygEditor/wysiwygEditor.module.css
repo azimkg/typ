@@ -1,0 +1,28 @@
+.btn_word {
+    width: 40px;
+    padding: 2px;
+    border: 1px solid var(--fill-primary);
+    cursor: pointer;
+    background: blue var(--text-primary);
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-primary);
+    border-radius: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.decoration {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.hover {
+    background: var(--col-m-primary);
+    color: var(--text-white);
+}

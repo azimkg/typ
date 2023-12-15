@@ -1,0 +1,121 @@
+:root {
+  --font-f-primary: 'Geologica Variable', sans-serif;
+  --font-f-secondary: 'Ubuntu Mono', sans-serif;
+  --global-black: #000000;
+  --global-white: #FFFFFF;
+  --progress-height: 12px;
+  --progress-radius: 2px;
+
+  /*---------bg-------*/
+  /*--bg-level-1: #000000;*/
+  --bg-level-2: #F5F5F5;
+  --bg-level-3: #FFFFFF;
+  --bg-level-4: #F3F3F3;
+  --bg-transparent: tranparent;
+  --bg-modal: rgba(0, 0, 0, 0.50);
+  --bg-certificate: #7E1AFF;
+  --bg-getcourse: rgba(255, 94, 26, 1);
+
+
+  /*-------text---------*/
+  --text-primary: #000000;
+  --text-secondary: rgba(60, 60, 67, 0.60);
+  --text-tertiary: rgba(60, 60, 67, 0.30);
+  --text-quaternary: rgba(60, 60, 67, 0.15);
+  --text-white: #FFFFFF;
+
+  /*-----fill------*/
+  --fill-primary: rgba(120, 120, 128, 0.20);
+  --fill-secondary: rgba(120, 120, 128, 0.16);
+  --fill-tertiary: rgba(120, 120, 128, 0.12);
+  --fill-quaternary: rgba(120, 120, 128, 0.08);
+
+  /* color main */
+  --col-m-primary: #1A75FF;
+  /*--col-m-secondary: #000000;*/
+  --col-m-tertiary: rgba(26, 117, 255, 0.20);
+  /*--col-m-quaternary: #000000;*/
+
+  /* color success */
+  --col-s-primary: #4BBD4B;
+  --col-s-secondary: rgba(75, 189, 75, 0.20);
+
+  /* color error */
+  --col-er-primary: #F23D44;
+  --col-er-secondary: rgba(242, 61, 68, 0.2);
+
+  /* keyboard */
+  --keyboard-correct: #000000;
+  --keyboard-unset: #8A8A8E;
+  --main-lantern: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+.dark {
+  --bg-level-2: #0F0F0F;
+  --bg-level-3: #1A1A1A;
+  --bg-level-4: #1F1F1F;
+  --keyboard-correct: #FFFFFF;
+  --keyboard-unset: #59595C;
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(169, 169, 189, 0.6);
+  --text-tertiary: rgba(233, 224, 210, 0.3);
+}
+
+.green {
+  --bg-level-2: #173F35;
+  --bg-level-3: #1C4D40;
+  --bg-level-4: #215C4C;
+  --col-m-primary: #ffb200;
+  --col-s-primary: #41A352;
+  --fill-primary: rgba(0, 0, 0, 0.2);
+  --fill-quaternary: rgba(0, 0, 0, 0.08);
+  --fill-tertiary: rgba(0, 0, 0, 0.12);
+  --text-primary: #E9E0D2;
+  --text-secondary: rgba(233, 224, 210, 0.6);
+  --text-tertiary: rgba(233, 224, 210, 0.3);
+  --keyboard-correct: #FFFFFF;
+  --keyboard-unset: #408E7B;
+}
+
+.blue {
+  --bg-level-2: #003A52;
+  --bg-level-3: #004966;
+  --bg-level-4: #005B80;
+  --col-m-primary: #D480FF;
+  --col-s-primary: #39BD7B;
+  --fill-primary: rgba(255, 255, 255, 0.2);
+  --fill-quaternary: rgba(255, 255, 255, 0.08);
+  --fill-tertiary: rgba(255, 255, 255, 0.12);
+  --text-primary: #FDE2FF;
+  --text-secondary: rgba(253, 226, 255, 0.6);
+  --text-tertiary: rgba(253, 226, 255, 0.3);
+  --keyboard-unset: #00E4FF;
+  --keyboard-correct: #FFFFFF;
+}
+
+body {
+  background: var(--bg-level-2);
+  color: var(--text-primary);
+  background: var(--bg-level-2);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--font-f-primary);
+  font-variation-settings: "CRSV" 1, "SHRP" 0;
+}

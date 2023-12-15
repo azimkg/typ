@@ -1,0 +1,63 @@
+.button {
+  width: var(--button-width);
+  height:58px;
+  background-color: var(--bg-level-3);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px 6px 12px;
+  color: inherit;
+  font-family: inherit;
+  box-shadow: 0 -1.5px 0 0 rgba(0, 0, 0, 0.20) inset;
+}
+
+.button_p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.button_p2 {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.button_p_small {
+  font-size: 20px;
+}
+
+.button_p2_start {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button_p2_end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.button_p2_right {
+  margin-right: 12px;
+}
+
+.button_p2_center_bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.active {
+  position: relative;
+  background-color: var(--col-m-primary);
+  color: var(--global-white);
+}
+.active::after {
+  position: absolute;
+  content: ' ';
+  opacity: 0.4;
+  width: var(--main-lantern-width);
+  left: -4px;
+  top: var(--main-lantern);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, var(--col-m-primary) 100%);
+  bottom: -4px;
+}

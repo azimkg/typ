@@ -1,0 +1,46 @@
+.textPolitic {
+  font-weight: 300;
+  font-size: 14px;
+  left: 18px;
+  color: var(--text-secondary);
+  margin: 8px 0;
+  line-height: 18px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.input_mb {
+  margin-bottom: 8px;
+}
+
+.inputs_flex {
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.formName {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 8px;
+}
+
+.btnBlock {
+  display: flex;
+  column-gap: 8px;
+}
+
+.btnBlock>button {
+  width: 100%;
+}

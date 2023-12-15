@@ -1,0 +1,40 @@
+.template {
+  margin-top: 16px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-level-3);
+  border-radius: 24px;
+  margin-bottom: 48px;
+}
+
+.template > h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 52px;
+}
+
+.template > div {
+  width: 924px;
+}
+.template > div > div {
+  height: 432px;
+}
+
+.template > div > p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--keyboard-unset);
+  margin-bottom: 60px;
+}
+
+.template > div > p span.correct {
+  color: var(--keyboard-correct);
+}
+
+.template > div > p span.error {
+  color: var(--col-er-primary);
+}

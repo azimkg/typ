@@ -1,0 +1,32 @@
+.app_select {
+  width: fit-content;
+  min-width: 174px;
+}
+
+.app_select .react-select__control {
+  border-radius: 8px;
+  max-height: 48px;
+  border: 1.5px solid var(--fill-primary);
+  padding: 0 32px;
+}
+
+.app_select .react-select__menu {
+  background: var(--bg-level-3);
+  transform: translateY(4px);
+  padding: 10px 0;
+  border-radius: 8px;
+  transition: all .4s ease;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1);
+}
+.app_select .react-select__option {
+  cursor: pointer;
+  padding: 6px 32px;
+  border-bottom: 1px solid transparent;
+  transition: all .3s;
+}
+.app_select .react-select__option:hover {
+  border-color: var(--col-m-primary);
+}
+.app_select .react-select__option--is-selected {
+  color: var(--col-m-primary);
+}

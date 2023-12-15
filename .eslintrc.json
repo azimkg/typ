@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "import/newline-after-import": [
+      "warn", { "count": 2 }],
+    "quotes": ["warn", "single"],
+    "indent": ["warn", 2],
+    "semi": ["warn", "always"],
+    "array-bracket-spacing": ["warn", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "no-console": "warn","no-debugger": "warn",
+    "no-multiple-empty-lines": [ "warn", {  "max": 2,
+      "maxEOF": 0} ],
+    "import/order": [
+      "error", {
+        "groups": [[ "builtin", "external", "internal" ], "parent", "sibling", "index" ],
+        "pathGroups": [{
+          "pattern": "react",        "group": "external",
+          "position": "before"      }
+        ],    "newlines-between": "never",
+        "pathGroupsExcludedImportTypes": [ "react" ],
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }],
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "no-unused-vars": "off",
+    "no-prototype-builtins": "off"
+  }
+}

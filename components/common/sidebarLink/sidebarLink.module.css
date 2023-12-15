@@ -1,0 +1,29 @@
+.link {
+  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  background: var(--bg-level-3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.active {
+  background: var(--col-m-primary);
+  color: var(--text-white);
+}
+.with_progress {
+  padding: 8px 16px;
+}
+
+.progress {
+  display: none;
+}
+.progress_show {
+  display: block;
+}
+.active > .progress {
+  --col-m-primary: var(--global-white);
+  --col-m-tertiary: rgba(255, 255, 255, 0.4)
+}

@@ -1,0 +1,19 @@
+.template {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.template>p {
+  color: var(--text-primary);
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+.dropdown>div:last-child {
+  min-width: 920px;
+  width: 100%;
+  right: 0;
+  border: 1px solid var(--fill-primary);
+}
