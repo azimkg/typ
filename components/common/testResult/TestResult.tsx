@@ -3,12 +3,8 @@ import React, { FC, useEffect } from 'react';
 import Enter from '@icons/newLine.svg';
 import classes from 'classnames';
 import { useAppDispatch } from 'hooks/useAppDispatch';
-import { exerciseActions } from 'models/exercise/slice/exerciseSlice';
-import { StageExercise, StageTestExercise } from 'models/exercise/types/exerciseSchema';
 import { getErrorIndexes, getNextIndex } from 'models/keyboard/selectors/keyboardSelectors';
-import { keyboardActions } from 'models/keyboard/slice/keyboardSlice';
 import { useParams } from 'next/navigation';
-import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import Container from '../container/Container';
@@ -114,7 +110,6 @@ const TestResult: FC<TestResultProps> = (props) => {
                             { [cls.every]: currentIndex < cumulativeIndex },
                           )}
                         >
-                          <div className={classes({ [cls.border]: currentIndex === cumulativeIndex })}></div>
                           <p>{letter}&nbsp;</p>
                         </div>
                       );

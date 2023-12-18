@@ -1,0 +1,10 @@
+.template {
+    width: 100%;
+    overflow: hidden;
+    height: 4px;
+}
+
+.block {
+    width: 100%;
+    height: 4px;
+}

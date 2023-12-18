@@ -1,6 +1,7 @@
 'use client';
 import React, { use, useCallback, useEffect, useRef, useState } from 'react';
-import { WORDS } from 'helpers/lessonData';
+import { WORDS, TEST_LETTER } from 'helpers/lessonData';
+import { getStageTestTime } from 'models/exercise/selectors/exerciseSelectors';
 import { exerciseActions } from 'models/exercise/slice/exerciseSlice';
 import { StageTestExercise } from 'models/exercise/types/exerciseSchema';
 import { getErrorIndexes, getLetters, getNextIndex } from 'models/keyboard/selectors/keyboardSelectors';
@@ -18,9 +19,13 @@ export type Word = {
   words: string[]
 }
 
+export type Letters = {
+  id: number,
+  words: string[],
+  time: number
+}
 
-const letters = ['The life story of American physicist Robert', 'Oppenheimer, who led the first development ', 'of nuclear weapons.'];
-const combinedString = letters.join('\n');
+
 const ExersiceForTests: React.FC = () => {
   const { type: routeType, test } = useParams<{ type: string, test: string }>();
   const [word, setWord] = useState<Word[]>(WORDS);
@@ -29,6 +34,8 @@ const ExersiceForTests: React.FC = () => {
   const currentIndex = useSelector(getNextIndex);
   let cumulativeIndex = 0;
   const anchor = useRef<HTMLDivElement>(null);
+  const progress = useSelector(getStageTestTime);
+
 
 
   // eslint-disable-next-line no-undef
@@ -57,8 +64,8 @@ const ExersiceForTests: React.FC = () => {
   useEffect(() => {
     if (routeType === 'word') {
       dispatch(keyboardActions.setCurrentLetter(WORDS[+test - 1].words.join('\n')));
-    } else {
-      dispatch(keyboardActions.setCurrentLetter(combinedString));
+    } else if (routeType === 'time') {
+      dispatch(keyboardActions.setCurrentLetter(TEST_LETTER[+test - 1].words.join('\n')));
     }
     dispatch(keyboardActions.handleChangeValidate('half'));
     return () => {
@@ -66,16 +73,19 @@ const ExersiceForTests: React.FC = () => {
     };
   }, [dispatch]);
 
-
+  console.log(progress)
   useEffect(() => {
-    if (routeType === 'word') {
-      if (WORDS[+test - 1].words.length === currentIndex) {
-        dispatch(exerciseActions.setTestStage(StageTestExercise.RESULT));
+    if (routeType === 'time') {
+      if (Math.ceil(progress) >= 106) {
+        dispatch(exerciseActions.setTestStage(StageTestExercise.RESULT_TIME));
       }
-    } else if (combinedString.length === currentIndex) {
-      dispatch(exerciseActions.setTestStage(StageTestExercise.RESULT));
+    } else {
+      if (currentIndex === WORDS[+test - 1].words.join('\n').length) {
+        dispatch(exerciseActions.setTestStage(StageTestExercise.RESULT_WORD));
+      }
     }
-  }, [currentIndex, dispatch]);
+  }, [dispatch, progress, currentIndex, routeType, test]);
+
   return (
     <>
       <div className={cls.main_block}>
@@ -90,7 +100,7 @@ const ExersiceForTests: React.FC = () => {
             :
             <TimeTest
               anchor={anchor}
-              letters={letters}
+              letters={TEST_LETTER[+test - 1].words}
               cumulativeIndex={cumulativeIndex}
               errorIndexes={errorIndexes}
               currentIndex={currentIndex} />

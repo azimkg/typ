@@ -11,7 +11,8 @@ import ExerciseTypeTestContent from '../exersiceTypeTestContent/ExersiceTypeTest
 
 const contentPage = new Map<StageTestExercise, ReactElement>([
   [StageTestExercise.START, <ExerciseTypeTestContent key={1} />],
-  [StageTestExercise.RESULT, <ExerciseTypeResult key={2} />]
+  [StageTestExercise.RESULT_TIME, <ExerciseTypeResult key={2} />],
+  [StageTestExercise.RESULT_WORD, <ExerciseTypeResult key={3} />]
 ]);
 const ExerciseTestContent = () => {
   const dispatch = useAppDispatch();

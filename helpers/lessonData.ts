@@ -1,5 +1,5 @@
 import { Lesson } from 'common/lessonCard/LessonCard';
-import { Word } from 'components/common/exersiceForTests/ExersiceForTests';
+import { Letters, Word } from 'components/common/exersiceForTests/ExersiceForTests';
 import { Test } from 'components/common/testCard/TestCard';
 import { IMainProgressData } from '../types/commonTypes';
 
@@ -184,6 +184,29 @@ const exercises = [
     exerciseLetter: 'b'
   }
 ];
+
+export const TEST_LETTER:Letters[] = [
+  {
+    id: 1,
+    words: ['The life story of American physicist Robert', 'Oppenheimer, who led the first development ', 'of nuclear weapons.'],
+    time:15
+  },
+  {
+    id: 2,
+    words: ['The life story of American physicist Robert', 'Oppenheimer, who led the first development ', 'of nuclear weapons.'],
+    time:30
+  },
+  {
+    id: 3,
+    words: ['The life story of American physicist Robert', 'Oppenheimer, who led the first development ', 'of nuclear weapons.'],
+    time:60
+  },
+  {
+    id: 3,
+    words: ['The life story of American physicist Robert', 'Oppenheimer, who led the first development ', 'of nuclear weapons.'],
+    time:120
+  },
+]
 
 
 export type Tests = {

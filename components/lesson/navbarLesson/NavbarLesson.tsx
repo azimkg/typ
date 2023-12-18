@@ -37,6 +37,7 @@ const NavbarLesson = ({ title = 'xnj', children }: NavbarLessonProps) => {
     dispatch(exerciseActions.setStage(StageExercise.START));
     route.push(href);
     dispatch(keyboardActions.handleReset());
+    dispatch(exerciseActions.updateTimer(0));
   };
   return (
     <>

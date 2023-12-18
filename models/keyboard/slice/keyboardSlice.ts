@@ -43,10 +43,12 @@ const keyboardSlice = createSlice({
       state.settingsModal = action.payload;
     },
     setCurrentLetter: (state, action: PayloadAction<string>) => {
+      console.log(action.payload);
       const letterLanguage = determineLanguage(action.payload);
       state.currentLetter = action.payload;
       state.nextKey =  action.payload[0];
       state.keyboardLn = letterLanguage;
+      console.log(letterLanguage)
     },
     handleChangeKeyboard: (state) => {
       if (handleValidate(state.errorIndex, state.typeValidate, state.currentLetter[state.index]) || state.isNotValidSettingKeyboard === true) {
@@ -64,15 +66,17 @@ const keyboardSlice = createSlice({
     },
     handleSetNull: (state, action: PayloadAction<string>) => {
       const keyLayout = determineLanguage(action.payload);
-      if(!(state.keyboardLn === keyLayout)) {
+      if (!(state.keyboardLn === keyLayout)) {
         state.isNotValidSettingKeyboard = true;
         return;
+      } else {
+        state.isNotValidSettingKeyboard = false;
       }
+      
       if (action.payload === state.currentLetter[state.index]) {
         setResult(state.nextKey!);
         state.nextKey = null;
         currentKey = action.payload;
-        
         return;
       }
       if(state.nextKey !== null) {

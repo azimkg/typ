@@ -7,9 +7,11 @@ export enum StageExercise {
 
 export enum StageTestExercise {
   START,
-  RESULT,
+  RESULT_TIME,
+  RESULT_WORD,
   CERTIFICATE
 }
+
 
 export enum ExerciseType {
   NEW_LETTER_START ='new-letter-start',
@@ -23,5 +25,6 @@ export enum ExerciseType {
 export interface IExerciseSchema {
   stage: StageExercise,
   exerciseType: ExerciseType,
-  stageTest:StageTestExercise
+  stageTest: StageTestExercise,
+  time:number
 }

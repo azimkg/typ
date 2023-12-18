@@ -6,6 +6,7 @@ const initialState: IExerciseSchema = {
   stage: 0,
   exerciseType: ExerciseType.NEW_LETTER_START,
   stageTest: 0,
+  time: 0
 };
 
 const exerciseSlice = createSlice({
@@ -20,6 +21,9 @@ const exerciseSlice = createSlice({
     },
     setTestStage: (state, action: PayloadAction<number>) => {
       state.stageTest = action.payload;
+    },
+    updateTimer: (state, action: PayloadAction<number>) => { 
+      state.time = action.payload;
     }
   }
 });

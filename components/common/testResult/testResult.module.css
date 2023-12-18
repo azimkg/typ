@@ -44,6 +44,7 @@
     padding: 24px;
     border-radius: 16px;
     background-color: var(--bg-level-3);
+    overflow-y: scroll;
 }
 
 .result_coins {

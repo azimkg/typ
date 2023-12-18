@@ -30,6 +30,7 @@ const calculateSum = (data: ResultLesson): lessonResultType => {
 const ExerciseTypeResult = () => {
   const [lessonResult, setLessonResult] = useState<lessonResultType>(initialLessonResult);
 
+  console.log(result);
   useEffect(() => {
     const updatedLessonResult = calculateSum(result);
     setLessonResult(updatedLessonResult);
